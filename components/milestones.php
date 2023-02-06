@@ -1,5 +1,5 @@
 <div class="milestones">
-    <div class="milestone border-b">
+    <!-- <div class="milestone border-b">
         <div class="flex">
             <div class="checkbox"><input type="checkbox" /></div>
             <div>
@@ -14,5 +14,5 @@
                 <p>Module Name</p>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
