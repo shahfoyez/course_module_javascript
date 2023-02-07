@@ -1,9 +1,8 @@
 const milestoneData = JSON.parse(data).data;
 
 function loadMilestones(){
-  const milestones = documment.querySelector('.milestone');
-  milestones.innerHTML = `
-  <div class="milestone border-b">
+  const milestones = document.querySelector('.milestones');
+  milestones.innerHTML = `<div class="milestone border-b"> 
         <div class="flex">
             <div class="checkbox"><input type="checkbox" /></div>
             <div>
