@@ -8,7 +8,7 @@ function loadMilestones(){
     return `<div class="milestone border-b">
             <div class="flex">
                 <div class="checkbox"><input type="checkbox" /></div>
-                <div onclick="openMilestone(this)">
+                <div onclick="openMilestone(this, ${milestone._id})">
                     <p>
                         ${milestone.name}
                         <span><i class="fas fa-chevron-down"></i></span>
@@ -29,7 +29,7 @@ function loadMilestones(){
   }).join("")}`;
 }
 loadMilestones();
-function openMilestone( milestoneElement ){
+function openMilestone( milestoneElement, id ){
     const currentPanel = milestoneElement.parentNode.nextElementSibling;
     const shownPanel = document.querySelector('.show');
 
@@ -44,6 +44,10 @@ function openMilestone( milestoneElement ){
         shownPanel.classList.remove('show');
     }
     currentPanel.classList.toggle('show');
+    
+    showMilestone(id);
+}
+function showMilestone(id){
     
 }
 function foyRemoveBorder(){
